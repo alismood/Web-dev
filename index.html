@@ -4,13 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My first web page</title>
+    <link rel="stylesheet" href="style.css"> <!-- Step 12.1. Linked external CSS file -->
+
+    <!-- Step 9. Added CSS styling | Step 12.2. Moved styling to external file -->
+<!--    <style> 
+        body {
+            background-color: lightblue;
+        }
+        h1 {
+            color: navy;
+            margin-left: 20px;
+        }
+        p {
+            font-family: verdana;
+            font-size: 20px;
+        }
+    </style>-->
+
 </head>
 <body>
     <center>
         <h1>My first web page</h1>
          <h1>Welcome to my first web page!</h1>
         <h3> My name is Ali</h3>
-        <p>This is a paragraph of text on my web page.</p>
+        <p style="color:brown">This is a paragraph of text on my web page.</p>  <!-- Step 10. Changed font color -->
     </center>
     <h3> My hobbies</h3>
     <ol> 
@@ -24,10 +41,60 @@
         <li>W3school</li>
     </ul>
 
+    <table border="1">
+        <tr>
+            <th>Subject</th>
+            <th>Day</th>
+            <th>Time</th>
+        </tr>
+        <tr>
+            <td>Web dev</td>
+            <td>Monday</td>
+            <td>17:00</td>
+        </tr>
+        <tr>
+            <td>Physics</td>
+            <td>Tuesday</td>
+            <td>17:00</td>
+        </tr>
+        <tr>
+            <td>Math</td>
+            <td>Wednesday</td>
+            <td>17:00</td>
+        </tr>
+    </table>
+        <h3> 2 columns table</h3>
+    <table border="1">
+        <tr>
+            <th>Thing</th>
+            <td>Description</td>
+        </tr>
+        <tr>
+            <th>Computer</th>
+            <td>A device</td>
+        </tr>
+        <tr>
+            <th>Phone</th>
+            <td>A device</td>
+        </tr>
+    </table>
+
+    <p><strong>My mood for today: </strong>😀 😃 😄 😁 😆 😅 😂 🤣 </p>
+    <br>
+    <form>
+        <label>First Name:</label>
+        <input type="text" value="Write your name">
+        <input type="email" value="Write email">
+        <input type="color" value="pick color" default="#f00000">
+        <input type="submit" value="Submit">
+    </form>
+
 
     <a href="https://www.youtube.com">Youtube link</a>
     <img src="Ali.png" alt="Aitu Image" width="300" height="300">
-    
+   
+    <p class="red-text">This is a paragraph with red text.</p> <!-- Step 13. Applied external CSS styling -->
+    <p id="blue-text">This is a paragraph with blue text.</p>
 
 </body>
 
