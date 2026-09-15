@@ -1,2 +1,9 @@
 # Web-dev
-WEB dev course repository
+# Assignment #1. HTML & CSS Basics
+Name: Zhabaikhan Ali | Group: IT 2503 | 
+
+## Step 1.
+
+
+
+
