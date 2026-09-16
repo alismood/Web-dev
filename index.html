@@ -4,98 +4,92 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My first web page</title>
-    <link rel="stylesheet" href="style.css"> <!-- Step 12.1. Linked external CSS file -->
-
-    <!-- Step 9. Added CSS styling | Step 12.2. Moved styling to external file -->
-<!--    <style> 
-        body {
-            background-color: lightblue;
-        }
-        h1 {
-            color: navy;
-            margin-left: 20px;
-        }
-        p {
-            font-family: verdana;
-            font-size: 20px;
-        }
-    </style>-->
-
+    <!-- Step 12. & 15. CSS and Favicon -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
 </head>
 <body>
-    <center>
-        <h1>My first web page</h1>
-         <h1>Welcome to my first web page!</h1>
-        <h3> My name is Ali</h3>
-        <p style="color:brown">This is a paragraph of text on my web page.</p>  <!-- Step 10. Changed font color -->
-    </center>
-    <h3> My hobbies</h3>
-    <ol> 
-        <li>Basketball</li>
-        <li>Football</li>  
-        <li>Swimming</li>
-    </ol>
-    <ul>
-        <li>Youtbue</li>
-        <li>LinkedIn</li>  
-        <li>W3school</li>
-    </ul>
 
-    <table border="1">
-        <tr>
-            <th>Subject</th>
-            <th>Day</th>
-            <th>Time</th>
-        </tr>
-        <tr>
-            <td>Web dev</td>
-            <td>Monday</td>
-            <td>17:00</td>
-        </tr>
-        <tr>
-            <td>Physics</td>
-            <td>Tuesday</td>
-            <td>17:00</td>
-        </tr>
-        <tr>
-            <td>Math</td>
-            <td>Wednesday</td>
-            <td>17:00</td>
-        </tr>
-    </table>
-        <h3> 2 columns table</h3>
-    <table border="1">
-        <tr>
-            <th>Thing</th>
-            <td>Description</td>
-        </tr>
-        <tr>
-            <th>Computer</th>
-            <td>A device</td>
-        </tr>
-        <tr>
-            <th>Phone</th>
-            <td>A device</td>
-        </tr>
-    </table>
+    <!-- Step 16: Div - Header Section -->
+    <div class="header">
+        <center>
+            <h1 id="main-heading">My first web page</h1> 
+            <h1>Welcome to my first web page!</h1>
+            <!-- Step 19: Sizing units applied here (h3 sized in rem via CSS) -->
+            <h3 class="rem-text">My name is Ali</h3>
+            <p style="color:brown">This is a paragraph of text on my web page.</p>
+        </center>
+    </div>
 
-    <p><strong>My mood for today: </strong>😀 😃 😄 😁 😆 😅 😂 🤣 </p>
-    <br>
-    <form>
-        <label>First Name:</label>
-        <input type="text" value="Write your name">
-        <input type="email" value="Write email">
-        <input type="color" value="pick color" default="#f00000">
-        <input type="submit" value="Submit">
-    </form>
+    <!-- Step 16: Div - Main Content Section -->
+    <div class="main-content">
+        <h3>My hobbies</h3>
+        <ol> 
+            <li>Basketball</li>
+            <li>Football</li>  
+            <li>Swimming</li>
+        </ol>
+        <br>
+        <h3>My favorite websites:</h3>
+        <ul>
+            <li>Youtube</li>
+            <li>LinkedIn</li>  
+            <li>W3school</li>
+        </ul>
 
+        <table border="1">
+            <tr><th>Subject</th><th>Day</th><th>Time</th></tr>
+            <tr><td>Web dev</td><td>Monday</td><td>17:00</td></tr>
+            <tr><td>Physics</td><td>Tuesday</td><td>17:00</td></tr>
+            <tr><td>Math</td><td>Wednesday</td><td>17:00</td></tr>
+        </table>
 
-    <a href="https://www.youtube.com">Youtube link</a>
-    <img src="Ali.png" alt="Aitu Image" width="300" height="300">
-   
-    <p class="red-text">This is a paragraph with red text.</p> <!-- Step 13. Applied external CSS styling -->
-    <p id="blue-text">This is a paragraph with blue text.</p>
+        <h3>2 columns table</h3>
+        <table border="1">
+            <tr><th>Thing</th><td>Description</td></tr>
+            <tr><th>Computer</th><td>A device</td></tr>
+            <tr><th>Phone</th><td>A device</td></tr>
+        </table>
+
+        <p><strong>My mood for today: 😊 🚀 🔥</strong></p> <!-- Added Step 7 emojis that were missing -->
+        
+        <br>
+        <form>
+            <label>First Name:</label>
+            <input type="text" value="Write your name">
+            <input type="email" value="Write email">
+            <input type="color" value="pick color">
+            <input type="submit" value="Submit">
+        </form>
+
+        <p class="red-text">This is a paragraph with red text.</p>
+        <p id="blue-text">This is a paragraph with blue text.</p>
+        <p class="highlight">This is the first highlighted element.</p>
+        
+        <!-- Step 18: CSS Positioning -->
+        <h3>CSS Positioning Demo</h3>
+        <div class="position-container">
+            <div class="box static-box">Static (Default)</div>
+            <div class="box relative-box">Relative (Shifted)</div>
+            <div class="box absolute-box">Absolute (Fixed to container)</div>
+        </div>
+
+        <!-- Step 20: Float and Clear -->
+        <h3>Float and Clear Demo</h3>
+        <div class="float-container">
+            <div class="float-left">Floated Left Box</div>
+            <div class="float-right">Floated Right Box</div>
+            <div class="clear">I am cleared. No floating around me!</div>
+        </div>
+    </div>
+
+    <!-- Step 16: Div - Footer Section -->
+    <div class="footer">
+        <a href="https://www.youtube.com">Youtube link</a>
+        <br><br>
+        <!-- Step 19: px and % sizing on image -->
+        <img src="Ali.png" alt="Aitu Image" class="sized-image">
+    </div>
 
 </body>
-
 </html>
