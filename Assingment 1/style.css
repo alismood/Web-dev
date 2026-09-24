@@ -10,7 +10,7 @@ p { font-family: verdana; font-size: 20px; }
 
 /* Step 16 & 17: Divs & Box Model (Margins, Padding, Borders) */
 .header {
-    background-color: #f4f4f4;
+    background-color: #dadada;
     padding: 20px; /* Padding pushes content inward */
     margin-bottom: 20px; /* Margin creates space below header */
     border-bottom: 3px solid navy; /* Border */
@@ -20,7 +20,7 @@ p { font-family: verdana; font-size: 20px; }
     background-color: white;
     padding: 20px;
     border: 2px dashed gray;
-    margin: 10px;
+    margin: 10px, 20px, 30px, 40px;
 }
 
 .footer {
@@ -101,4 +101,18 @@ p { font-family: verdana; font-size: 20px; }
     color: white;
     padding: 10px;
     margin-top: 10px;
+}
+
+.custom-btn {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.custom-btn:hover {
+  background-color: #0056b3;
 }
