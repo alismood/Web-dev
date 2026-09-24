@@ -10,7 +10,7 @@ No summary yet
 
 ## 📸 Assignment Tasks & Screenshots
 
-### Part 1 and 2: Flebox and card row
+### Part 1: Flebox and card row
 Added navigation bar with logo, title, and navigation list with links to other pages
 Then added flexbox with spaced placement through a horizontal line and made sure to make the same height for each card
 In the end added a little hover effect with shadow and lif effect
@@ -18,7 +18,7 @@ In the end added a little hover effect with shadow and lif effect
 
 <img width="1455" height="719" alt="Screenshot 2026-09-24 at 18 37 20" src="https://github.com/user-attachments/assets/11655e61-8796-4d02-9fdf-71a89507d6b4" />
 
-### Part 3: Grid System
+### Part 2: Grid System
 
 
 
