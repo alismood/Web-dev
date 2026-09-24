@@ -1,5 +1,5 @@
 # Web-dev
-# Assignment #1. HTML & CSS Basics
+# Assignment #2
 Name: Zhabaikhan Ali | Group: IT 2503 | 
 
 ## 🚀 Work Process Summary
