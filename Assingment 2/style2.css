@@ -16,38 +16,91 @@ h3{
 }
 
 
-.header{
-    background-color: #5a49a7;
-    text-align: center;
-    border-radius: 20px;
-    margin-left: 40px;
-    margin-right: 40px;
-    padding: 20px;
-}
-#body{
-    background-color: #5a49a7;
-    border-radius: 20px;
-    margin-left: 40px;
-    margin-right: 40px;
-    margin-top: 20px;
-    padding: 10px;
-}
-
-.flex-container{
-    position: relative;
-    background-color: #5a49a7;
-    width: 100%;
-    height: 100px;
+.navbar{
     display: flex;
     justify-content: space-between;
-    flex-direction: row;
     align-items: center;
+    padding: 1rem 2.5rem;
+    background-color: #683ac5;
+    flex-direction: row;
 }
 
-.flex-item{
-    background-color: #5a49a7;
-    width: 75%;
-    height: 75%;
-    margin: 10px;
-    flex: 1;
+.nav-links{
+    display: flex;
+    gap: 1.75rem;
+    list-style: none;
+}
+
+.nav-links a{
+    text-decoration: none;
+    color: gold;
+    font-size: 1.25rem;
+}
+
+.horizontal-list {
+  display: flex;         
+  gap: 1.5rem;           
+  margin: 0;             
+  padding: 0;            
+  align-items: center;   
+}
+
+.nav-links a:hover {
+  color: #ffffff;
+}
+
+.card-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: top;
+  padding: 1rem 2.5rem;
+  background-color: #7449ca;
+  flex-direction: row;
+  gap: 1.75rem;
+}
+
+.card {
+  background-color: #8154da;
+  color: gold;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  text-align: center;
+  flex: 1; 
+
+  border: 1px solid purple;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 16px 24px -4px rgba(0, 0, 0, 0.12);
+}
+
+.card img {
+  max-width: 90%;
+  height: 240px;
+  border-radius: 0.5rem;
+}
+
+.card p {
+  font-size: 1rem;
+  margin-top: 0.5rem;
+  background-color: #845ed2;
+}
+
+.card button {
+  margin-top: auto; 
+  padding: 0.6rem 1.2rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #ffffff;
+  background-color: #113480;
+  border: none;
+  border-radius: 6px;
+}
+
+.card button:hover {
+  background-color: #2e4b9b;
 }
