@@ -4,8 +4,8 @@ Name: Zhabaikhan Ali | Group: IT 2503 |
 
 ## 🚀 Work Process Summary
 
-In this assignment, I built a structured webpage from scratch to understand the core principles of front-end development.
 
+No summary yet
 
 
 ## 📸 Assignment Tasks & Screenshots
