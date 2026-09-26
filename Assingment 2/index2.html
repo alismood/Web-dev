@@ -1,51 +1,160 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style2.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Assignment 2 - Flexbox & Grid</title>
+  <link rel="stylesheet" href="style2.css">
+  <link rel="icon" type="image/x-icon" href="removed-bg.ico">
 </head>
 <body>
-    <header class="navbar">
-        <div>
-            <img src="removed-bg-2.png" alt="Logo" border-radius="30%" height="110px">
-        </div>
-
-        <h1>Super Cars</h1>
-
-        <nav class="nav-links">
-            <ul class="horizontal-list">
-                <li><a href="../Assingment%201/index.html">Assingment 1</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#gallery">Gallery</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-
+  <div class="grid-container">
+    <header class="header"> <!-- made logo as link to link to a home page like in proffesional sites and apply class style-->
+      <a href="#" class="logo">
+        <img src="removed-bg-2.png" alt="Supercar Logo">
+        <span>ApexGarage</span>
+      </a>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="../Assingment%201/index.html">Assignment 1</a></li>
+          <li><a href="#featured">Card Row</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+        </ul>
+      </nav>
     </header>
-    <div class="card-container">
-        <article class="card">
-            <img src="posrche.png">
-            <h3>Porsche</h3>
-            <p>Posrche is a German luxury sports car manufacturer founded in 1938 by Ferdinand Porsche. The company is known for producing high-performance, stylish cars with advanced engineering and innovative technology. Posrche has a reputation for creating some of the most desirable and sought-after sports cars in the world.</p>
-            <button>Read More</button>
-        </article>
 
-        <article class="card">
-            <img src="lamborghini.png">
-            <h3>Lamborghini</h3>
-            <p>Lamborghini is an Italian luxury sports car manufacturer founded in 1963 by Ferruccio Lamborghini. The company is known for producing high-performance, exotic cars with distinctive designs and powerful engines. Lamborghini has a reputation for creating some of the most iconic and sought-after supercars in the world.</p>
-            <button>Read More</button>
-        </article>
+    <aside class="sidebar">
+      <h2>Brands</h2>
+      <ul>
+        <li><a href="#porsche">Porsche</a></li>
+        <li><a href="#lamborghini">Lamborghini</a></li>
+        <li><a href="#mclaren">McLaren</a></li>
+        <li><a href="#gallery">9-Photo Grid</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+      </ul>
+    </aside>
 
-        <article class="card">
-            <img src="mclaren.png">
-            <h3>Mclaren</h3>
-            <p>McLaren Automotive is a British automotive manufacturer based in Woking, Surrey, England. It was founded in 1989 by New Zealand racing driver Bruce McLaren. The company is known for producing high-performance sports cars and supercars, as well as participating in motorsport events such as Formula One.</p>
-            <button>Read More</button>
-        </article>
-    </div>
-    
+    <main class="main-content">
+      <section id="featured" class="section-block">
+        <h2>Cards</h2>
+        <p class="section-subtitle">The world's fastest production cars.</p>
+        
+        <div class="car-gallery"> <!-- flex thing-->
+          <article class="car-card" id="porsche">
+            <img src="posrche.png" alt="Porsche 911 Turbo S">
+            <h3>Porsche 911 Turbo S</h3>
+            <p>Twin-turbocharged flat-six engine delivering 640 hp, razor-sharp precision, and everyday usability.</p>
+            <button class="card-btn">View Specs</button>
+          </article>
+
+          <article class="car-card" id="lamborghini">
+            <img src="lamborghini.png" alt="Lamborghini Revuelto">
+            <h3>Lamborghini Aventador</h3>
+            <p>Naturally aspirated V12 power combined with aggressive Italian aerodynamics and carbon-fiber monocoque.</p>
+            <button class="card-btn">View Specs</button>
+          </article>
+
+          <article class="car-card" id="mclaren">
+            <img src="mclaren.png" alt="McLaren 720S">
+            <h3>McLaren 720S</h3>
+            <p>Ultra-lightweight carbon chassis with dihedral doors and twin-turbo V8 track-focused performance.</p>
+            <button class="card-btn">View Specs</button>
+          </article>
+        </div>
+      </section>
+
+      
+      <section id="gallery" class="section-block">
+        <h2>Galery</h2>
+        <p class="section-subtitle">Hover over any image to reveal its specification overlay</p>
+
+        <div class="image-gallery"> <!-- Grid container in of the galery-->
+          <div class="gallery-item"> <!-- Block class of the galery-->
+            <img src="images/images.jpeg" alt="Prosche GT4RS">
+            <div class="caption-overlay"><span>Porsche GT4RS</span></div>
+          </div>
+
+          <div class="gallery-item">
+            <img src="images/image-4.png" alt="Lamborghini ruvuelto">
+            <div class="caption-overlay"><span>Lamborghini Revuelto</span></div>
+          </div>
+
+          <div class="gallery-item">
+            <img src="images/images-7.jpeg" alt="McLaren">
+            <div class="caption-overlay"><span>McLaren 720S</span></div>
+          </div>
+
+          <div class="gallery-item">
+            <img src="images/images-2.jpeg" alt="Porsche">
+            <div class="caption-overlay"><span>Porsche GT3RS</span></div>
+          </div>
+
+          <div class="gallery-item">
+            <img src="images/images-5.jpeg" alt="Lambo">
+            <div class="caption-overlay"><span>Lamborghini Huracan</span></div>
+          </div>
+
+          <div class="gallery-item">
+            <img src="images/images-8.jpeg" alt="Porsche Weissach">
+            <div class="caption-overlay"><span>McLaren Senna</span></div>
+          </div>
+
+          <div class="gallery-item">
+            <img src="images/images-3.jpeg" alt="Lamborghini SVJ">
+            <div class="caption-overlay"><span>Porsche 718</span></div>
+          </div>
+
+          <div class="gallery-item">
+            <img src="images/images-6.jpeg" alt="McLaren LT">
+            <div class="caption-overlay"><span>Lamborghini Diablo</span></div>
+          </div>
+
+          <div class="gallery-item">
+            <img src="images/images-10.jpeg" alt="Supercar Cockpit">
+            <div class="caption-overlay"><span>McLaren W1</span></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- PART 3 -->
+      <section id="portfolio" class="section-block">
+        <h2>Protfolio</h2>
+
+        <div class="portfolio-grid">
+          <!-- Projects Area on the left -->
+          <div class="projects-area">
+            <article class="project-card">
+              <h3>Eco-Telemetry AI</h3>
+              <p>Real-time vehicle emissions and battery optimization dashboard using machine learning inference.</p>
+              <button class="card-btn">Button</button>
+            </article>
+
+            <article class="project-card">
+              <h3>Aerodynamics Simulator</h3>
+              <p>Web-based fluid dynamics visualizer calculating downforce-to-drag ratios for GT3 wings.</p>
+              <button class="card-btn">Button</button>
+            </article>
+          </div>
+
+          <!-- Info on the right -->
+          <aside class="portfolio-info">
+            <h3>Developer Profile</h3>
+            <p><strong>Name:</strong> Ali Zhabaikhan</p>
+            <p><strong>Focus:</strong> AI Engineering</p>
+            <p><strong>Stack:</strong> Web</p>
+          </aside>
+        </div>
+      </section>
+
+    </main>
+
+    <!-- PART 2 & 3: Footer spanning across the bottom -->
+    <footer class="footer">
+      <p>&copy; 2026 Ali Zhabaikhan — Assignment 2: Advanced CSS (Flexbox & Grid)</p>
+    </footer>
+
+  </div>
+
 </body>
 </html>
