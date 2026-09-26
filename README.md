@@ -1,4 +1,7 @@
 # Web-dev
+### Live Demo Links
+* [Open Assignment 1](./Assingment%201/index.html)
+* [Open Assignment 2](./Assingment%202/index2.html)
 # Assignment #2
 Name: Zhabaikhan Ali | Group: IT 2503 | 
 
