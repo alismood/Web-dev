@@ -3,7 +3,7 @@
 * [Open Assignment 1](./Assingment%201/index.html)
 * [Open Assignment 2](./Assingment%202/index2.html)
 * [Open Assignment 3](./Assignment%203/index.html)
-# Assignment #2
+# Assignment #3
 Name: Zhabaikhan Ali | Group: IT 2503 | 
 
 ### Task 0. Responsive Typography
